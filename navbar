@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Navbar</title>
+    <style>
+      * {
+        margin: 0px;
+      }
+      body {
+      }
+      .d1 {
+        background-color: black;
+      }
+      ul {
+        padding-left: 5px;
+        margin-left: 10px;
+      }
+      ul li a {
+        text-decoration: none;
+        color: rgb(69, 227, 255);
+        font-weight: bold;
+        font-size: 20px;
+      }
+      ul li {
+        margin-top: 5px;
+        margin-bottom: 6px;
+        padding-top: 3px;
+        padding-left: 13px;
+        padding-right: 13px;
+        padding-bottom: 3px;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 10px;
+        border-width: 1px;
+        transition: 0.6s all ease-in;
+      }
+      ul li:hover {
+        background-color: rgb(83, 215, 255);
+        box-shadow: 3px 4px 9px rgb(120, 197, 248);
+      }
+      ul li:hover a {
+        color: white;
+      }
+      ul li:active {
+        transform: scale(1.1);
+        transition: 0.2s all ease-in-out;
+      }
+      .d2 {
+        display: flex;
+        background-color: rgb(104, 104, 104);
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        position: relative;
+      }
+      .d21 {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        animation-name: move;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        animation-delay: 1s;
+        animation-timing-function: ease-in-out;
+        left: 30px;
+        background-color: whitesmoke;
+        border: 2px solid bisque;
+        border-radius: 20px;
+        box-shadow: 3px 3px 10px rgba(255, 228, 196, 0.719);
+        width: 22%;
+        gap: 2rem;
+        height: 202px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+      @keyframes move {
+        0% {
+            opacity: 0;
+          top: 200px;
+          box-shadow: 3px 3px 20px rgba(255, 228, 196, 0.719);
+          transform:scale(0.9);
+
+        }
+        20% {
+          box-shadow: 3px 3px 10px green;
+        }
+        40%{
+            box-shadow: 3px 3px 10px rgb(175, 209, 175);
+        }
+        50%{
+            box-shadow: 3px 3px 10px lightgreen;
+        }
+        100% {
+            opacity: 1;
+          top: 105px;
+          box-shadow: 3px 3px 10px rgba(255, 228, 196, 0.719);
+          transform:scale(1);
+        }
+    }
+      .d211 {
+        border: 3px 4px 10px ghostwhite;
+        box-shadow: 4px 3px 10px rgb(202, 202, 202);
+        background-image: url("https://cdn.pixabay.com/photo/2026/04/06/11/46/11-46-27-808_1280.png");
+        background-size: cover;
+        background-position: center;
+        width: 60%;
+        border-radius: 50%;
+        height: 500px;
+        transition: 0.2s all ease;
+      }
+      .d211:hover {
+        transform: scale(1.1) translate(5px, -10px);
+      }
+      .d212 {
+        padding-top: 3px;
+        text-align: center;
+        border: 3px solid bisque;
+        border-radius: 10px;
+
+        box-shadow: 3px 3px 10px rgba(255, 228, 196, 0.719);
+        width: 80%;
+        height: 100px;
+        transition: 0.2s all linear;
+      }
+      .d212 h4 {
+        font-size: 20px;
+      }
+      .d212:hover {
+        background-color: black;
+        border-color: whitesmoke;
+        box-shadow: 2px 3px 10px grey;
+        transform: scale(1.1) translateY(-5px);
+      }
+      .d212:hover h4 {
+        color: white;
+      }
+
+      .d22 {
+        position: absolute;
+        left: 280px;
+        border-radius: 15px;
+        padding: 2ch;
+        background-color: bisque;
+        border: 4px solid white;
+        box-shadow: 2px 2px 8px white;
+        width: 65%;
+        transition: 0.1s all ease;
+        animation-name: move;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        animation-delay: 1s;
+        animation-timing-function: ease-in-out;
+      }
+      .d22 p {
+        padding: 1ch;
+        word-spacing: 5px;
+        font-size: 120%;
+      }
+      .d22 h2 {
+        text-align: center;
+      }
+      .d22:hover {
+        transform: translate(-5px, -5px);
+        box-shadow: 6px 4px 8px 5px rgb(134, 134, 134);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="d1">
+      <ul>
+        <li><a href="/home.html">Home</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="jobs.html">Career</a></li>
+        <li><a href="Log.html">Sign Up</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </div>
+    <div class="d2">
+      <div class="d21">
+        <div class="d211"></div>
+        <div class="d212">
+          <h4>The Black Fox</h4>
+        </div>
+      </div>
+      <div class="d22">
+        <h2>Fennec Fox</h2>
+        <hr width="25%" style="margin: auto" />
+        <br />
+        <p>
+          The fennec fox (Vulpes zerda) is a small fox native to the deserts of
+          North Africa, ranging from Western Sahara and Mauritania to the Sinai
+          Peninsula. Its most distinctive feature is its unusually large ears,
+          which serve to dissipate heat and listen for underground prey. The
+          fennec is the smallest fox species. Its coat, ears, and kidney
+          functions have adapted to the desert environment with high
+          temperatures and little water.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
