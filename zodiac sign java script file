@@ -1,0 +1,54 @@
+date=parseInt(prompt("Enter date of your birth"));
+month=prompt("Enter month of your birth").toLowerCase();
+if((month=="march" && date>=21)||(month=="april" && date<=19))
+{
+    document.write(" Your zodiac sign is Aries");
+}
+else if((month=="april" && date>=20)||(month=="may" && date<=20))
+{
+    document.write("Your zodiac sign is Taurus");
+}
+else if((month=="may" && date>=21)||(month=="june" && date<=21))
+{
+    document.write("Your zodiac sign is Gemini");
+}
+else if((month=="june" && date>=22)||(month=="july" && date<=22))
+{
+    document.write("Your zodiac sign is Cancer");
+}
+else if((month=="july" && date>=23)||(month=="august" && date<=22))
+{
+    document.write("Your zodiac sign is Leo");
+}
+else if((month=="august" && date>=23)||(month=="september" && date<=22))
+{
+    document.write("Your zodiac sign is Virgo");
+}
+else if((month=="september" && date>=23)||(month=="october" && date<=23))
+{
+    document.write("Your zodiac sign is Libra");
+}
+else if((month=="october" && date>=24)||(month=="november" && date<=21))
+{
+    document.write("Your zodiac sign is Scorpio");
+}
+else if((month=="november" && date>=22)||(month=="december" && date<=21))
+{
+    document.write("Your zodiac sign is Sagittarius");
+}
+else if((month=="december" && date>=22)||(month=="january" && date<=19))
+{
+    document.write("Your zodiac sign is Capricorn");
+}
+else if((month=="january" && date>=20)||(month=="february" && date<=18))
+{
+    document.write("Your zodiac sign is Aquarius");
+}
+else if((month=="february" && date>=19)||(month=="march" && date<=20))
+{
+    document.write("Your zodiac sign is Pisces");
+}
+else
+{
+document.write("Invalid date");
+}
