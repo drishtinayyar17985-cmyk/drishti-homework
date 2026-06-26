@@ -1,5 +1,23 @@
 date=parseInt(prompt("Enter date of your birth"));
 month=prompt("Enter month of your birth").toLowerCase();
+if(date<1 || date>31)
+{
+document.write("Invalid date")
+}
+else if(date>=31 && (month=="april"|| month=="june"||month=="september"||month=="november"))
+{
+    document.write("Invalid date");
+}
+else if(date>31 && (month=="january"|| month=="march"||month=="may"||month=="july"||month=="august"|| month=="october"||month=="december"))
+{
+    document.write("Invalid date");
+
+}
+else if(month=="february" && (date>29))
+{
+    document.write("invalid date");
+}
+else{
 if((month=="march" && date>=21)||(month=="april" && date<=19))
 {
     document.write(" Your zodiac sign is Aries");
@@ -48,7 +66,4 @@ else if((month=="february" && date>=19)||(month=="march" && date<=20))
 {
     document.write("Your zodiac sign is Pisces");
 }
-else
-{
-document.write("Invalid date");
 }
