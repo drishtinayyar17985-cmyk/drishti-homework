@@ -1,0 +1,75 @@
+function zodiacsign(date,month)
+{
+    month=month.toLowerCase();
+    if(date<1 || date>31)
+{
+return "Invalid date";
+}
+else if(date>=31 && (month=="april"|| month=="june"||month=="september"||month=="november"))
+{
+    return "Invalid date";
+}
+else if(date>31 && (month=="january"|| month=="march"||month=="may"||month=="july"||month=="august"|| month=="october"||month=="december"))
+{
+    return "Invalid date";
+
+}
+else if(month=="february" && (date>29))
+{
+    return "Invalid date";
+}
+else{
+if((month=="march" && date>=21)||(month=="april" && date<=19))
+{
+    return " Your zodiac sign is Aries";
+}
+else if((month=="april" && date>=20)||(month=="may" && date<=20))
+{
+    return "Your zodiac sign is Taurus";
+}
+else if((month=="may" && date>=21)||(month=="june" && date<=21))
+{
+    return "Your zodiac sign is Gemini";
+}
+else if((month=="june" && date>=22)||(month=="july" && date<=22))
+{
+    return "Your zodiac sign is Cancer";
+}
+else if((month=="july" && date>=23)||(month=="august" && date<=22))
+{
+    return "Your zodiac sign is Leo";
+}
+else if((month=="august" && date>=23)||(month=="september" && date<=22))
+{
+    return "Your zodiac sign is Virgo";
+}
+else if((month=="september" && date>=23)||(month=="october" && date<=23))
+{
+    return "Your zodiac sign is Libra";
+}
+else if((month=="october" && date>=24)||(month=="november" && date<=21))
+{
+    return "Your zodiac sign is Scorpio";
+}
+else if((month=="november" && date>=22)||(month=="december" && date<=21))
+{
+    return "Your zodiac sign is Sagittarius";
+}
+else if((month=="december" && date>=22)||(month=="january" && date<=19))
+{
+    return "Your zodiac sign is Capricorn";
+}
+else if((month=="january" && date>=20)||(month=="february" && date<=18))
+{
+    return "Your zodiac sign is Aquarius";
+}
+else if((month=="february" && date>=19)||(month=="march" && date<=20))
+{
+    return "Your zodiac sign is Pisces";
+}
+}
+}
+dater=parseInt(prompt("Enter date of your birth"));
+months=prompt("Enter month of your birth");
+let sign= zodiacsign(dater,months);
+document.write(sign);
